@@ -34,7 +34,7 @@ public class HomeController {
 
       model.addAttribute("recipes", recipes);
 
-      return "index";
+//      return "index";
    }
 
 
