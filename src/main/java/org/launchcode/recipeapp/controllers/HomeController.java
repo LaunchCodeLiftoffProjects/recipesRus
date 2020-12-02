@@ -33,7 +33,7 @@ public class HomeController {
       all.forEach(recipes::add);
 
       model.addAttribute("recipes", recipes);
-      return "index";
+      //return "index";
    }
 
 
