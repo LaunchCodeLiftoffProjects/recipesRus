@@ -1,0 +1,39 @@
+html, body {
+margin: 0;
+padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 25px;`
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header div#logo-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header div#logo-img img {
+    height: 50px;
+    width: auto;
+    margin-right: 50px;
+}
