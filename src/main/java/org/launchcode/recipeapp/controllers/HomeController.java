@@ -1,7 +1,7 @@
 package org.launchcode.recipeapp.controllers;
 
 
-import org.launchcode.recipeapp.data.RecipeRepository;
+import org.launchcode.recipeapp.models.data.RecipeRepository;
 import org.launchcode.recipeapp.models.Recipe;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,11 +31,8 @@ public class HomeController {
       List<Recipe> recipes = new ArrayList<>();
       Iterable<Recipe> all = recipeRepository.findAll();
       all.forEach(recipes::add);
-
       model.addAttribute("recipes", recipes);
 
       return "index";
    }
-
-
 }
